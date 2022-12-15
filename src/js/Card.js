@@ -1,10 +1,14 @@
-import { formatCurrency } from './utils'
 import classNames from "classnames";
+import EventEmitter from "eventemitter3";
 
+export default class Card extends EventEmitter {
+  static get events() {
+    return {
+      ADD_TO_CART: "add_to_cart",
+    };
+  }
 
-export default class Notification {
   static get types() {
-
     return {
       PEPPERONI: "pepperoni",
       MARGHERITA: "margherita",
@@ -13,35 +17,31 @@ export default class Notification {
   }
 
   constructor({ type, price }) {
-    this.type = type
-    this.price = price
+    super();
+
+    this._type = type;
+    this._price = price;
 
     this.container = document.createElement("div");
-    this.container.classList.add("notification-container");
-    document.querySelector(".notifications").appendChild(this.container);
+    this.container.classList.add("card-container");
   }
 
-  empty(arr) {
-    for (let i = 0; i < arr.length; i++) {
-      arr[i].addEventListener('click', function () {
-        this.parentElement.parentElement.innerHTML = ""
-      })
-    }
-  }
-
-  render({ type, price } = constructor) {
-
+  render() {
     const template = `
-                      <div class="notification type-${this.type} ${classNames({ "is-danger": this.type === Notification.types.HAWAIIAN })}">
-                        <button class="${classNames("delete")}"></button>
-                        🍕 <span class="${classNames("type")}">${this.type}</span> (<span class="${classNames("price")}">${formatCurrency(this.price)}</span>) has been added to your order.
-                      </div>
-                          `;
+<div class="card type-${this._type} ${classNames({
+      "is-danger": this._type === Card.types.HAWAIIAN,
+    })}">
+  <div class="emoji">🍕</div>
+  <span class="type">${this._type}</span>
+</div>
+    `;
 
     this.container.innerHTML = template;
-    let arr = document.querySelectorAll('.delete')
-
-    this.empty(arr)
-
+    this.container.addEventListener("click", () => {
+      this.emit(Card.events.ADD_TO_CART, {
+        type: this._type,
+        price: this._price,
+      });
+    });
   }
 }

@@ -27,14 +27,18 @@ export default class Application extends EventEmitter {
       },
     ];
 
-
-
     pizzas.forEach((pizza) => {
       const card = new Card({ ...pizza });
       card.render();
 
       document.querySelector(".main").appendChild(card.container);
 
+      card.addListener(Card.events.ADD_TO_CART, () => {
+        const notif = new Notification();
+        notif.render({ ...pizza });
+
+        document.querySelector(".main").appendChild(notif.container);
+      });
     });
 
     this.emit(Application.events.READY);

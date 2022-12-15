@@ -1,10 +1,7 @@
-import { formatCurrency } from './utils'
+import { formatCurrency } from "./utils";
 import classNames from "classnames";
-
-
 export default class Notification {
     static get types() {
-
         return {
             PEPPERONI: "pepperoni",
             MARGHERITA: "margherita",
@@ -12,36 +9,30 @@ export default class Notification {
         };
     }
 
-    constructor({ type, price }) {
-        this.type = type
-        this.price = price
-
+    constructor() {
         this.container = document.createElement("div");
         this.container.classList.add("notification-container");
-        document.querySelector(".notifications").appendChild(this.container);
-    }
-
-    empty(arr) {
-        for (let i = 0; i < arr.length; i++) {
-            arr[i].addEventListener('click', function () {
-                this.parentElement.parentElement.innerHTML = ""
-            })
+        if (this._type === Notification.types.HAWAIIAN) {
+            this.container.classList.add("is-danger");
         }
     }
 
-    render({ type, price } = constructor) {
+    empty() {
+        this.container.remove();
+    }
 
+    render({ type, price }) {
+        const isHawaiian = type === Notification.types.HAWAIIAN;
+        const cNames = classNames(`notification type-${type}`, { 'is-danger': isHawaiian });
         const template = `
-                      <div class="notification type-${this.type} ${classNames({ "is-danger": this.type === Notification.types.HAWAIIAN })}">
-                        <button class="${classNames("delete")}"></button>
-                        🍕 <span class="${classNames("type")}">${this.type}</span> (<span class="${classNames("price")}">${formatCurrency(this.price)}</span>) has been added to your order.
-                      </div>
-                          `;
+      <div class="${cNames}">
+        <button class="delete"></button>
+        🍕 <span class="type">${type}</span> (<span class="price">${formatCurrency(price)}</span>) has been added to your order.
+      </div>
+    `;
 
         this.container.innerHTML = template;
-        let arr = document.querySelectorAll('.delete')
-
-        this.empty(arr)
-
+        const deleteButton = this.container.querySelector(".delete");
+        deleteButton.onclick = () => this.empty();
     }
 }
