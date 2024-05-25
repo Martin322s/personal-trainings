@@ -10,5 +10,3 @@ function solve(array) {
 
     console.log(resultArr.reverse().join(' '));
 }
-
-solve([10, 15, 20, 25]);
