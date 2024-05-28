@@ -13,4 +13,3 @@ export const renderTemplate = (ctx, next) => {
 }
 
 
-
