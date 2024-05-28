@@ -12,4 +12,5 @@ export const renderTemplate = (ctx, next) => {
     next();
 }
 
+page(renderTemplate);
 
