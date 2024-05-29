@@ -14,3 +14,9 @@ export const renderTemplate = (ctx, next) => {
 
 page(renderTemplate);
 
+page('/home', renderHome);
+
+
+function renderHome(ctx) {
+    ctx.rendering(html`<h1>Home page</h1>`);
+}
