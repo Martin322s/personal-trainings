@@ -15,7 +15,12 @@ export const renderTemplate = (ctx, next) => {
 page(renderTemplate);
 
 page('/home', renderHome);
+page('/about', renderAbout);
 
+
+function renderAbout(ctx) {
+    ctx.rendering(html`<h1>About page</h1>`);
+}
 
 function renderHome(ctx) {
     ctx.rendering(html`<h1>Home page</h1>`);
