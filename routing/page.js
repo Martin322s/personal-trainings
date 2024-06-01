@@ -16,7 +16,13 @@ page(renderTemplate);
 
 page('/home', renderHome);
 page('/about', renderAbout);
+page('/contacts', renderContacts);
 
+page.start();
+
+function renderContacts(ctx) {
+    ctx.rendering(html`<h1>Contects page</h1>`);
+}
 
 function renderAbout(ctx) {
     ctx.rendering(html`<h1>About page</h1>`);
