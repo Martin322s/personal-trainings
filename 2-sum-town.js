@@ -14,5 +14,3 @@ function solve(input) {
 
     console.log(JSON.stringify(resultObj));
 }
-
-solve(['Sofia','20','Varna','3','sofia','5','varna','4']);
