@@ -1,4 +1,3 @@
 function growingWord() {
-
-  //TODO...
+    const paragraph = document.getElementById('growingWord');
 }
