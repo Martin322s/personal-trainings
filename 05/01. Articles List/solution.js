@@ -3,5 +3,13 @@ function createArticle() {
 	const contentInput = document.querySelector('#createContent');
 	const articleElement = document.querySelector('#articles');
 
-	
+	if (titleInput.value !== '' && contentInput.value !== '') {
+		const article = document.createElement('article');
+		const titleElement = document.createElement('h3');
+		titleElement.textContent = titleInput.value;
+		const contentParagraph = document.createElement('p');
+		contentParagraph.textContent = contentInput.value;
+
+		
+	}
 }
