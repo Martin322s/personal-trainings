@@ -11,4 +11,6 @@ function growingWord() {
     const colors = ['blue', 'green', 'red'];
     let currentColorIndex = colors.indexOf(paragraph.style.color);
     currentColorIndex = (currentColorIndex + 1) % colors.length;
+
+    paragraph.style.color = colors[currentColorIndex];
 }
