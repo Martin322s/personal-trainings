@@ -10,6 +10,11 @@ function createArticle() {
 		const contentParagraph = document.createElement('p');
 		contentParagraph.textContent = contentInput.value;
 
-		
+		article.appendChild(titleElement);
+		article.appendChild(contentParagraph);
+		articleElement.appendChild(article);
+
+		titleInput.value = '';
+		contentInput.value = '';
 	}
 }
