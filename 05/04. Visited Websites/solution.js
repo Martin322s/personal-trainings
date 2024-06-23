@@ -1,4 +1,4 @@
 function solve() {
-
-  //TODO...
+	const links = document.querySelectorAll('.link-1 a');
+	
 }
