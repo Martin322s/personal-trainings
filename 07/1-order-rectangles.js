@@ -23,5 +23,3 @@ function solve(input) {
         console.log(input);
     return input;
 }
-
-solve([[1,20],[20,1],[5,3],[5,3]]);
