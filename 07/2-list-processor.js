@@ -23,5 +23,3 @@ function solve(input) {
 
     inner();
 }
-
-solve(['add peter', 'add george', 'add peter', 'remove peter','print']);
