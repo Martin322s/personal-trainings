@@ -66,7 +66,13 @@ function solve() {
                 ev.target.classList.remove('green');
                 ev.target.classList.add('red');
 
-                
+                inProgressTasksSection.appendChild(articleElement);
+                ev.target.addEventListener('click', deleteButtonHandler);
+
+                finishButton.addEventListener('click', (ev) => {
+                    doneTasksSection.appendChild(ev.target.parentNode.parentNode);
+                    ev.target.parentNode.remove();
+                });
             });
 
             deleteButton.addEventListener('click', deleteButtonHandler);
