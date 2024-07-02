@@ -48,6 +48,28 @@ function solve() {
             taskInputField.value = '';
             descriptionInputField.value = '';
             dateInputField.value = '';
+
+            const deleteButtonHandler = (ev) => ev.target.parentNode.parentNode.remove();
+
+            startButton.addEventListener('click', (ev) => {
+                ev.preventDefault();
+
+                let divButtons = ev.target.parentNode;
+                let articleElement = ev.target.parentNode.parentNode;
+                let finishButton = divButtons.querySelector('button.red');
+
+                finishButton.textContent = 'Finish';
+                finishButton.classList.remove('red');
+                finishButton.classList.add('orange');
+
+                ev.target.textContent = 'Delete';
+                ev.target.classList.remove('green');
+                ev.target.classList.add('red');
+
+                
+            });
+
+            deleteButton.addEventListener('click', deleteButtonHandler);
         }
     });
 }
