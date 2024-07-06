@@ -1,5 +1,3 @@
-function solve(array, delimiter) {
-    console.log(array.join(delimiter));
+export function solve(array, delimiter) {
+    return array.join(delimiter);
 }
-
-module.exports = solve;
