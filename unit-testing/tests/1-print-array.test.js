@@ -19,9 +19,14 @@ describe('Print array with delimiter', () => {
         let result = () => solve();
         expect(result).to.throw();
     });
-    
+
     it('Unit test on function with object instead of array', () => {
         let result = () => solve({}, '_');
+        expect(result).to.throw();
+    });
+
+    it('Unit test on function with null instead of array', () => {
+        let result = () => solve(null, '_');
         expect(result).to.throw();
     });
 });
