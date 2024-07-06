@@ -6,13 +6,13 @@ describe('Print array with delimiter', () => {
         let array = [1, 2, 3, 4];
         let delimiter = '-';
         let result = solve(array, delimiter);
-        assert.equal(result, '1-2-3-4');
+        expect(result).to.equal('1-2-3-4');
     });
 
     it('Unit test on function with one correct argument', () => {
         let array = [1, 2, 3, 4];
         let result = solve(array);
-        assert.equal(result, '1,2,3,4');
+        expect(result).to.equal('1,2,3,4');
     });
 
     it('Unit test on function without arguments', () => {
@@ -33,5 +33,10 @@ describe('Print array with delimiter', () => {
     it('Unit test on function with undefined instead of array', () => {
         let result = () => solve(undefined, '_');
         expect(result).to.throw();
+    });
+
+    it('Unit test on function with undefined instead of delimiter', () => {
+        let result = solve([1, 2, 3], undefined);
+        expect(result).to.equal('1,2,3')
     });
 });
