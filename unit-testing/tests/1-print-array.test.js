@@ -9,4 +9,13 @@ describe('Print array with delimiter', () => {
         let result = solve(array, delimiter);
         assert.equal(result, '1-2-3-4');
     });
+
+    it('Should print array with empty delimiter', () => {
+        let array = [1, 2, 3, 4];
+
+        let result = solve(array);
+        assert.equal(result, '1,2,3,4');
+    });
+
+    
 });
