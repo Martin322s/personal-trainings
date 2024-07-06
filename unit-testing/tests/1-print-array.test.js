@@ -17,5 +17,9 @@ describe('Print array with delimiter', () => {
         assert.equal(result, '1,2,3,4');
     });
 
-    
+    it('Should print array with empty delimiter', () => {
+        let result = () => solve();
+
+        expect(result).to.throw();
+    });
 });
