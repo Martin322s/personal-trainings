@@ -42,4 +42,9 @@ describe('2 - nth element in array', () => {
         let result = solve([1, 2, 3], {});
         expect(result).to.deep.equal([1]);
     });
+
+    it('Unit test on function with number instead of delimiter', () => {
+        let result = solve([1, 2, 3], 1);
+        expect(result).to.deep.equal([1, 2, 3]);
+    });
 });
