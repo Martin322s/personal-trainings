@@ -40,8 +40,8 @@ describe('Print array with delimiter', () => {
         expect(result).to.equal('1,2,3')
     });
 
-    it('Unit test on function with null instead of delimiter', () => {
-        let result = solve([1, 2, 3], null);
-        expect(result).to.equal('1null2null3');
+    it('Unit test on function with object instead of delimiter', () => {
+        let result = solve([1, 2, 3], {});
+        expect(result).to.equal('1[object Object]2[object Object]3');
     });
 });
