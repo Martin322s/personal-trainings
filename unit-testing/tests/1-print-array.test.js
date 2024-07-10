@@ -44,4 +44,9 @@ describe('Print array with delimiter', () => {
         let result = solve([1, 2, 3], {});
         expect(result).to.equal('1[object Object]2[object Object]3');
     });
+
+    it('Unit test on function with number instead of delimiter', () => {
+        let result = solve([1, 2, 3], 1);
+        expect(result).to.equal('11213');
+    });
 });
