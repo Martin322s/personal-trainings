@@ -7,3 +7,5 @@ export function solve(arr, step) {
 
     return result;
 }
+
+console.log(solve({}, 2));

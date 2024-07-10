@@ -17,4 +17,9 @@ describe('2 - nth element in array', () => {
         let result = () => solve();
         expect(result).to.throw();
     });
+
+    it('Unit test on function with object instead of array', () => {
+        let result = solve({}, 2);
+        expect(result).to.deep.equal([]);
+    });
 });
