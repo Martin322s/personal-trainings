@@ -1,7 +1,7 @@
 import { solve } from '../exercises/1-print-array-delimiter.js';
-import { assert, expect } from 'chai';
+import { expect } from 'chai';
 
-describe('Print array with delimiter', () => {
+describe('1 - Print array with delimiter', () => {
     it('Unit test on function with correct input', () => {
         let array = [1, 2, 3, 4];
         let delimiter = '-';

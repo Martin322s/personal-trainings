@@ -1,4 +1,4 @@
-function solve(arr, step) {
+export function solve(arr, step) {
     let result = [];
 
     for (let i = 0; i < arr.length; i += step) {
@@ -7,5 +7,3 @@ function solve(arr, step) {
 
     return result;
 }
-
-module.exports = solve;
