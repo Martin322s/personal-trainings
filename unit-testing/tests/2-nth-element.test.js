@@ -22,4 +22,9 @@ describe('2 - nth element in array', () => {
         let result = solve({}, 2);
         expect(result).to.deep.equal([]);
     });
+
+    it('Unit test on function with null instead of array', () => {
+        let result = () => solve(null, 2);
+        expect(result).to.throw();
+    });
 });
