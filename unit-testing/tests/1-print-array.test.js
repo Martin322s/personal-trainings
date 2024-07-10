@@ -39,4 +39,9 @@ describe('Print array with delimiter', () => {
         let result = solve([1, 2, 3], undefined);
         expect(result).to.equal('1,2,3')
     });
+
+    it('Unit test on function with null instead of delimiter', () => {
+        let result = solve([1, 2, 3], null);
+        expect(result).to.equal('1null2null3');
+    });
 });
