@@ -12,4 +12,9 @@ describe('2 - nth element in array', () => {
         let result = solve(array);
         expect(result).to.deep.equal([1]);
     });
+
+    it('Unit test on function without arguments', () => {
+        let result = () => solve();
+        expect(result).to.throw();
+    });
 });
