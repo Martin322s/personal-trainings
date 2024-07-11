@@ -27,4 +27,9 @@ describe('2 - nth element in array', () => {
         let result = () => solve(null, 2);
         expect(result).to.throw();
     });
+
+    it('Unit test on function with undefined instead of array', () => {
+        let result = () => solve(undefined, 2);
+        expect(result).to.throw();
+    });
 });
