@@ -8,4 +8,4 @@ export function solve(arr, step) {
     return result;
 }
 
-console.log(solve({}, 2));
+console.log(solve([1, 2, 3, 4]));

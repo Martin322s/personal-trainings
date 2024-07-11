@@ -32,4 +32,9 @@ describe('2 - nth element in array', () => {
         let result = () => solve(undefined, 2);
         expect(result).to.throw();
     });
+
+    it('Unit test on function with undefined instead of step', () => {
+        let result = solve([1, 2, 3], undefined);
+        expect(result).to.deep.equal([1])
+    });
 });
