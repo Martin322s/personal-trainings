@@ -1,4 +1,4 @@
-function solve(input) {
+export function solve(input) {
     let finalResult = [];
     let number = 1;
 
@@ -15,10 +15,10 @@ function solve(input) {
     }
 
     if (finalResult.length === 0) {
-        console.log('Empty');
+        return 'Empty';
     } else {
-        console.log(finalResult.join('\n'));
+        return finalResult.join('\n');
     }
 }
 
-module.exports = solve;
+solve(['add', 'add', 'remove', 'add', 'remove'])
