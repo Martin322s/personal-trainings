@@ -14,10 +14,10 @@ describe('3 - Add and remove elements', () => {
         expect(result).to.equal('Empty');
     });
 
-    // it('Unit test on function without arguments', () => {
-    //     let result = () => solve();
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function without arguments', () => {
+        let result = () => solve();
+        expect(result).to.throw();
+    });
 
     // it('Unit test on function with object instead of array', () => {
     //     let result = () => solve({}, '_');
