@@ -44,8 +44,8 @@ describe('3 - Add and remove elements', () => {
         expect(result).to.equal('Empty');
     });
 
-    // it('Unit test on function with boolean instead of delimiter', () => {
-    //     let result = solve([1, 2, 3], true);
-    //     expect(result).to.equal('1true2true3');
-    // });
+    it('Unit test on function with boolean instead of delimiter', () => {
+        let result = solve([true, false, true]);
+        expect(result).to.equal('Empty');
+    });
 });
