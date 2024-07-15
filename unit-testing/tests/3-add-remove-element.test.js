@@ -8,11 +8,11 @@ describe('3 - Add and remove elements', () => {
         expect(result).to.equal('1');
     });
 
-    // it('Unit test on function with one correct argument', () => {
-    //     let array = [1, 2, 3, 4];
-    //     let result = solve(array);
-    //     expect(result).to.equal('1,2,3,4');
-    // });
+    it('Unit test on function with numbers instead of commands', () => {
+        let array = [1, 2, 3, 4];
+        let result = solve(array);
+        expect(result).to.equal('Empty');
+    });
 
     // it('Unit test on function without arguments', () => {
     //     let result = () => solve();
