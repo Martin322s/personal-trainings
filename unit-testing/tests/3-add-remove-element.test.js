@@ -34,15 +34,10 @@ describe('3 - Add and remove elements', () => {
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with undefined instead of delimiter', () => {
-    //     let result = solve([1, 2, 3], undefined);
-    //     expect(result).to.equal('1,2,3')
-    // });
-
-    // it('Unit test on function with object instead of delimiter', () => {
-    //     let result = solve([1, 2, 3], {});
-    //     expect(result).to.equal('1[object Object]2[object Object]3');
-    // });
+    it('Unit test on function with object instead of delimiter', () => {
+        let result = solve([{}, {}, {}]);
+        expect(result).to.equal('Empty');
+    });
 
     // it('Unit test on function with number instead of delimiter', () => {
     //     let result = solve([1, 2, 3], 1);
