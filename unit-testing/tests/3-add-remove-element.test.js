@@ -29,10 +29,10 @@ describe('3 - Add and remove elements', () => {
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with undefined instead of array', () => {
-    //     let result = () => solve(undefined, '_');
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function with undefined instead of array', () => {
+        let result = () => solve(undefined);
+        expect(result).to.throw();
+    });
 
     // it('Unit test on function with undefined instead of delimiter', () => {
     //     let result = solve([1, 2, 3], undefined);
