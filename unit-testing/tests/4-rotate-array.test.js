@@ -9,11 +9,11 @@ describe('4-Rotate array', () => {
         expect(result).to.equal('2 3 4 5 6 1');
     });
 
-    // it('Unit test on function with one correct argument', () => {
-    //     let array = [1, 2, 3, 4];
-    //     let result = solve(array);
-    //     expect(result).to.equal('1,2,3,4');
-    // });
+    it('Unit test on function with one correct argument', () => {
+        let array = [1, 2, 3, 4];
+        let result = solve(array);
+        expect(result).to.equal('1 2 3 4');
+    });
 
     // it('Unit test on function without arguments', () => {
     //     let result = () => solve();
