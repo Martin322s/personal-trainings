@@ -20,10 +20,10 @@ describe('4-Rotate array', () => {
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with object instead of array', () => {
-    //     let result = () => solve({}, '_');
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function with object instead of array', () => {
+        let result = () => solve({}, '_');
+        expect(result).to.throw();
+    });
 
     // it('Unit test on function with null instead of array', () => {
     //     let result = () => solve(null, '_');
