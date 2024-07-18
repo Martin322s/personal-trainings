@@ -21,14 +21,14 @@ describe('4-Rotate array', () => {
     });
 
     it('Unit test on function with object instead of array', () => {
-        let result = () => solve({}, '_');
+        let result = () => solve({}, 6);
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with null instead of array', () => {
-    //     let result = () => solve(null, '_');
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function with null instead of array', () => {
+        let result = () => solve(null, 6);
+        expect(result).to.throw();
+    });
 
     // it('Unit test on function with undefined instead of array', () => {
     //     let result = () => solve(undefined, '_');
