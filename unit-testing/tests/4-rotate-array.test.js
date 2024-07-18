@@ -50,8 +50,8 @@ describe('4-Rotate array', () => {
         expect(result).to.equal('3 1 2');
     });
 
-    // it('Unit test on function with boolean instead of delimiter', () => {
-    //     let result = solve([1, 2, 3], true);
-    //     expect(result).to.equal('1true2true3');
-    // });
+    it('Unit test on function with boolean instead of delimiter', () => {
+        let result = solve([1, 2, 3], true);
+        expect(result).to.equal('3 1 2');
+    });
 });
