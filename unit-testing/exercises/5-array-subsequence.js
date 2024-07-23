@@ -1,4 +1,4 @@
-function solve(array) {
+export function solve(array) {
     let biggestNumber = 0;
     let result = [];
 
@@ -13,5 +13,4 @@ function solve(array) {
 
     return result;
 }
-
-module.exports = solve;
+console.log(solve([1, 2, 3, 4]));
