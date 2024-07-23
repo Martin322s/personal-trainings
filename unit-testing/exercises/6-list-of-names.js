@@ -1,7 +1,7 @@
-function solve(input) {
-    input
+export function solve(input) {
+    input = input
         .sort((a, b) => a.localeCompare(b))
-        .forEach((x, i) => console.log(`${i + 1}.${x}`));
-}
+        .map((x, i) => `${i + 1}.${x}`);
 
-module.exports = solve;
+    return input;
+}
