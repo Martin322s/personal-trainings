@@ -33,4 +33,9 @@ describe('6 - List of Names', () => {
         let result = () => solve(undefined);
         expect(result).to.throw();
     });
+
+    it('Unit test on function with boolean instead of array', () => {
+        let result = () => solve(true);
+        expect(result).to.throw();
+    });
 });
