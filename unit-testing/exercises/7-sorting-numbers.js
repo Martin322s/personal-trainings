@@ -1,4 +1,4 @@
-function solve(input) {
+export function solve(input) {
     let result = [];
     let sortedArray = input.sort((a, b) => a - b);
 
@@ -13,4 +13,4 @@ function solve(input) {
     return result;
 }
 
-module.exports = solve;
+console.log(solve([1, 2, 5, 0, 10, 17, 12]));
