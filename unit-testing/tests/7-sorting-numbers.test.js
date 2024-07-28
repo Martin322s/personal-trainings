@@ -1,7 +1,7 @@
 import { solve } from '../exercises/7-sorting-numbers.js';
 import { expect } from 'chai';
 
-describe('6 - List of Names', () => {
+describe('7 - Sorting Numbers', () => {
     it('Unit test on function with correct input', () => {
         let array = [1, 2, 5, 0, 10, 17, 12];
         let result = solve(array);

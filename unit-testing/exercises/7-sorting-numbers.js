@@ -12,5 +12,3 @@ export function solve(input) {
 
     return result;
 }
-
-console.log(solve([1, 2, 5, 0, 10, 17, 12]));
