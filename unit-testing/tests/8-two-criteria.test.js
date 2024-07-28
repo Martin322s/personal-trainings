@@ -8,11 +8,11 @@ describe('8 - Two Criteria', () => {
         expect(result).to.equal('Bob Andrew Christian');
     });
 
-    // it('Unit test on function with one correct argument', () => {
-    //     let array = [1, 2, 3, 4];
-    //     let result = solve(array);
-    //     expect(result).to.deep.equal([1, 4, 2, 3]);
-    // });
+    it('Unit test on function with one correct argument', () => {
+        let array = ['1', '2', '3', '4'];
+        let result = solve(array);
+        expect(result).to.equal('1 2 3 4');
+    });
 
     // it('Unit test on function without arguments', () => {
     //     let result = () => solve();

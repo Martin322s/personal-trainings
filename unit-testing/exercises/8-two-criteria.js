@@ -5,4 +5,4 @@ export function solve(input) {
     return result.join(' ');
 }
 
-console.log(solve(['Andrew', 'Christian', 'Bob']));
+console.log(solve(['1', '2', '3', '4']));
