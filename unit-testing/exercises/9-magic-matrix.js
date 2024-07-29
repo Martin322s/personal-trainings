@@ -17,5 +17,3 @@ function solve(matrix) {
 
     return true;
 }
-
-module.exports = solve;

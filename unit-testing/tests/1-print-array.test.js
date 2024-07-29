@@ -54,4 +54,9 @@ describe('1 - Print array with delimiter', () => {
         let result = solve([1, 2, 3], true);
         expect(result).to.equal('1true2true3');
     });
+
+    it('Unit test on function with number instead of array', () => {
+        let result = () => solve(1, '-');
+        expect(result).to.throw();
+    });
 });
