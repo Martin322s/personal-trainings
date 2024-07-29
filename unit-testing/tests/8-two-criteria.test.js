@@ -29,10 +29,10 @@ describe('8 - Two Criteria', () => {
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with undefined instead of array', () => {
-    //     let result = () => solve(undefined);
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function with undefined instead of array', () => {
+        let result = () => solve(undefined);
+        expect(result).to.throw();
+    });
 
     // it('Unit test on function with boolean instead of array', () => {
     //     let result = () => solve(true);
