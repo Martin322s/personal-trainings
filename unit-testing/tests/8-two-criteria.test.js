@@ -38,4 +38,9 @@ describe('8 - Two Criteria', () => {
         let result = () => solve(true);
         expect(result).to.throw();
     });
+
+    it('Unit test on function with number instead of array', () => {
+        let result = () => solve(1);
+        expect(result).to.throw();
+    });
 });
