@@ -34,8 +34,8 @@ describe('8 - Two Criteria', () => {
         expect(result).to.throw();
     });
 
-    // it('Unit test on function with boolean instead of array', () => {
-    //     let result = () => solve(true);
-    //     expect(result).to.throw();
-    // });
+    it('Unit test on function with boolean instead of array', () => {
+        let result = () => solve(true);
+        expect(result).to.throw();
+    });
 });
