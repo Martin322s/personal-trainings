@@ -17,24 +17,25 @@
                 <div>
                     <i class="far fa-user-circle gravatar"></i>
                 </div>
-                <div class="info">
-                    <h2>Name: David</h2>
+                <div class="info" id="{{id}}">
+                    <h2>Name: {{name}}</h2>
                     <button class="detailsBtn" onclick="showDetails(6)">Details</button>
                     <div class="details" id="6" style="display: none;">
-                        <p>Phone number: 0866592475</p>
-                        <p>Email: david@david.com</p>
+                        <p>Phone number: {{phoneNumber}}</p>
+                        <p>Email: {{email}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </script>
 
-    <script>
-        
-    </script>
-
     <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="./contacts.js"></script>
+
+    <script>
+        const contactView = document.getElementById('contacts-template').innerHTML;
+
+    </script>
 </body>
 
 </html>
