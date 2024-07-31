@@ -10,9 +10,10 @@
 
 <body>
     <h1>My contacts</h1>
+    <div id="contacts">
+    </div>
 
     <script type="text/x-handlebars-template" id="contacts-template">
-        <div id="contacts">
             <div class="contact card">
                 <div>
                     <i class="far fa-user-circle gravatar"></i>
@@ -26,18 +27,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </script>
+        </script>
 
     <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="./contacts.js"></script>
 
     <script>
+        const contactsElement = document.getElementById('contacts');
         const contactView = document.getElementById('contacts-template').innerHTML;
         const contactTemplate = Handlebars.compile(contactView);
+        const contactsHTML = contacts.map(x => contactTemplate(x)).join('');
+        contactsElement.innerHTML = contactsHTML;
 
-        
-        
     </script>
 </body>
 
