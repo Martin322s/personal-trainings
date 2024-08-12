@@ -9,6 +9,9 @@ $(function() {
         this.get('/contacts', () => {
             $('#root').html('<h1>Contacts page</h1>');
         });
+        this.get('/login', () => {
+            $('#root').html('<h1>Login page</h1>');
+        });
     });
 
     app.run();
