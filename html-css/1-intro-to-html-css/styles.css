@@ -1,0 +1,11 @@
+p {
+    font-size: 22px;
+}
+
+#main-heading {
+    font-size: 40px;
+}
+
+.list-item {
+    text-decoration: underline;
+}
