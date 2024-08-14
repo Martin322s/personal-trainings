@@ -14,6 +14,9 @@ html {
     font-style: italic;
     /* font-size: 1.5em; 1.5 * 22px */
     font-weight: lighter;
+    line-height: 1.5;
+    /* letter-spacing: 5px; */
+    text-align: justify;
 }
 
 /* div.parent {
