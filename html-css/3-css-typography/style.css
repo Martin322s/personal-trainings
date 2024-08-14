@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+@font-face {
+    font-family: 'Sevillana';
+    src: url('./Sevillana-Regular.ttf');
+}
+
+html {
+    font-size: 20px;
+}
+
+.main-text {
+    /* font-family: 'Sevillana', 'cursive'; */
+    font-style: italic;
+    /* font-size: 1.5em; 1.5 * 22px */
+    font-weight: lighter;
+}
+
+/* div.parent {
+    font-size: 22px;
+} */
