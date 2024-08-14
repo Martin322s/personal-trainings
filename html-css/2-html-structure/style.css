@@ -1,0 +1,20 @@
+header {
+    background-color: rgb(30, 56, 134);
+}
+
+.main-heading {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+}
