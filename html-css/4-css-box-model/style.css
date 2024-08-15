@@ -26,4 +26,8 @@ p {
     padding-right: 40px;
     padding-bottom: 10px;
     padding-left: 40px;
+
+    border: 3px solid black;
+    border: 10px dashed red; 
+    border: 12px dotted orange;
 }
