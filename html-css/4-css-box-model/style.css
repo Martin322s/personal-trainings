@@ -10,4 +10,8 @@ p {
     width: 240px;
     max-width: 25%;
     min-width: 240px;
+    background-color: aqua;
+    height: 300px;
+    max-height: 200px;
+    min-height: 150px;
 }
