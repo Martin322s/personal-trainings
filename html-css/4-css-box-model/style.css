@@ -14,10 +14,16 @@ p {
     height: 300px;
     max-height: 200px;
     min-height: 150px;
-    
+
     margin: 20px 50px 40px 50px;
     margin-top: 20px;
     margin-right: 50px;
     margin-bottom: 40px;
     margin-left: 50px;
+
+    padding: 30px 40px 10px 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
 }
