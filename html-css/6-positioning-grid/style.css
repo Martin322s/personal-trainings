@@ -1,0 +1,34 @@
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;;
+    grid-template-areas:
+        "head head head head"
+        "aside aside main main"
+        "footer footer footer footer";
+}
+
+.header {
+    height: 200px;
+    background-color: orange;
+    grid-area: head;
+}
+
+.main {
+    height: 200px;
+    background-color: lightblue;
+    grid-area: main;
+}
+
+.aside {
+    height: 200px;
+    background-color: lightcoral;
+    grid-area: aside;
+}
+
+.footer {
+    height: 200px;
+    background-color: lightgreen;
+    grid-area: footer;
+}
