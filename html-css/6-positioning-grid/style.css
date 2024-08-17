@@ -1,4 +1,4 @@
-.grid-section {
+/* .grid-section {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr;
     grid-template-rows: auto 1fr auto;
@@ -31,4 +31,19 @@
     height: 200px;
     background-color: lightgreen;
     grid-area: footer;
+} */
+
+.parent-element {
+    width: 300px;
+    height: 150px;
+    background-color: lightsalmon;
+}
+
+.child-element {
+    width: 300px;
+    height: 150px;
+    background-color: lightskyblue;
+    position: relative;
+    left: 20px;
+    top: 20px;
 }
