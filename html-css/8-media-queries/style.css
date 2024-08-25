@@ -13,3 +13,9 @@ h1 {
         color: red;
     }
 }
+
+@media (orientation: landscape) {
+    h1 {
+        color: pink;
+    }
+}
