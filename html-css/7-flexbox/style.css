@@ -18,7 +18,7 @@ body {
 }
 
 .item:nth-of-type(2) {
-    flex-grow: 1;
+    flex-shrink: 3;
     order: 3;
 }
 
