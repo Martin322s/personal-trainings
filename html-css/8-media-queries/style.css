@@ -1,3 +1,9 @@
+@media all, print {
+    h1 {
+        color: blue;
+    }
+}
+
 h1 {
     color: green;
 }
