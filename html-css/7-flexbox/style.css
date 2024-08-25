@@ -1,0 +1,16 @@
+body {
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid black;
+}
