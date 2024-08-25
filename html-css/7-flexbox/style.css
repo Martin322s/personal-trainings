@@ -5,8 +5,8 @@ body {
 
 .parent {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
 }
 .item {
     width: 100px;
