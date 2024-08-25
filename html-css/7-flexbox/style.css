@@ -5,9 +5,9 @@ body {
 
 .parent {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     gap: 30px;
-    height: 800px;
+    justify-content: flex-end;
 }
 .item {
     width: 100px;
