@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     overflow: auto;
+    background-color: #4c4c4c;
 }
 
 main {
@@ -295,5 +296,22 @@ main {
 }
 
 footer .heading {
-    color: white;
+    color: #4c4c4c;
+    padding-top: 5%;
+    padding-left: 20.5%;
+}
+
+div.list-container {
+    display: flex;
+    color: #4c4c4c;
+    gap: 120px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
