@@ -13,6 +13,7 @@ body {
     width: 100vw;
     height: 95vh;
     font-family: inherit;
+    margin-bottom: 15px;
 }
 
 .header-section::after {
@@ -131,4 +132,27 @@ body {
     height: 56px;
     width: 250px;
     font-size: 26px;
+}
+
+/* Main Section */
+/* Enjoy TV Section */
+.enjoy {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    gap: 110px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.enjoy-tv {
+    color: white;
+    width: 410px;
+    font-size: 22px;
+}
+
+.enjoy img {
+    width: 550px;
+    height: 290px;
 }
