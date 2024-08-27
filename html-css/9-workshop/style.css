@@ -1,3 +1,5 @@
+@import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
+
 body {
     font-family: sans-serif;
     overflow: auto;
@@ -55,6 +57,10 @@ main {
     border-radius: 3px;
     cursor: pointer;
     font-family: inherit;
+}
+
+.sign:hover {
+    background-color: #f9343e;
 }
 
 .main-heading {
@@ -138,6 +144,10 @@ main {
     height: 56px;
     width: 250px;
     font-size: 26px;
+}
+
+.try-for-free:hover {
+    background-color: #f9343e;
 }
 
 /* Main Section */
@@ -238,10 +248,20 @@ main {
 
 .faq-list li {
     background-color: #323131;
-    padding: 10px 40px;
+    padding: 10px 20px 10px 40px;
     width: 600px;
     margin-bottom: 5px;
     font-size: 20px;
+}
+
+.faq-list li:hover {
+    background-color: #4c4c4c;
+    cursor: pointer;
+}
+
+.faq-item i {
+    float: right;
+    padding-top: 5px;
 }
 
 .sub-heading-faq {
@@ -289,6 +309,10 @@ main {
     font-size: 26px;
 }
 
+.try-for-free-faq:hover {
+    background-color: #f9343e;
+}
+
 /* Footer */
 .page-footer {
     background-color: black;
@@ -314,4 +338,9 @@ footer li {
     list-style-type: none;
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+footer li:hover {
+    cursor: pointer;
+    color: #817d7d;
 }
