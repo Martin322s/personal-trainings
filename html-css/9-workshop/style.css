@@ -1,5 +1,10 @@
 body {
     font-family: sans-serif;
+    overflow: auto;
+}
+
+main {
+    background-color: #4c4c4c;
 }
 
 /* Heading section */
@@ -10,10 +15,10 @@ body {
     object-fit: cover;
     background-position: center center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 95vh;
     font-family: inherit;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .header-section::after {
@@ -21,7 +26,7 @@ body {
     position: relative;
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 1;
 }
@@ -138,12 +143,13 @@ body {
 /* Enjoy TV Section */
 .enjoy {
     background-color: black;
-    width: 100vw;
+    width: 100%;
     display: flex;
     gap: 110px;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    margin-bottom: 10px;
 }
 
 .enjoy-tv {
@@ -155,4 +161,139 @@ body {
 .enjoy img {
     width: 550px;
     height: 290px;
+}
+
+/* Download section */
+.download {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    gap: 110px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.download-tv {
+    color: white;
+    width: 410px;
+    font-size: 22px;
+}
+
+.download img {
+    width: 450px;
+    height: 290px;
+}
+
+/* Watch evrywhere section */
+.watch-everywhere {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    gap: 110px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.watch-everywhere-tv {
+    color: white;
+    width: 410px;
+    font-size: 22px;
+}
+
+.watch-everywhere img {
+    width: 450px;
+    height: 290px;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: black;
+    padding-bottom: 250px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.faq-heading {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+}
+
+.faq-list {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    width: 400px;
+    margin: auto 27%;
+}
+
+.faq-list li {
+    background-color: #323131;
+    padding: 10px 40px;
+    width: 600px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.sub-heading-faq {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 560px;
+    line-height: 1;
+}
+
+.email-faq {
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 29%;
+    width: 400px;
+    height: 56px;
+    display: inline-block;
+}
+
+.email-faq::placeholder {
+    font-size: 12px;
+}
+
+.try-for-free-faq {
+    border: unset;
+    outline: unset;
+    background: unset;
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 53%;
+    color: white;
+    background-color: #e30813;
+    padding: 3px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    height: 56px;
+    width: 245px;
+    font-size: 26px;
+}
+
+/* Footer */
+.page-footer {
+    background-color: black;
+    height: 50vh;
+}
+
+footer .heading {
+    color: white;
 }
