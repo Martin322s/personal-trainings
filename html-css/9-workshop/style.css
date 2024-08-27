@@ -88,3 +88,47 @@ body {
     line-height: 1;
 }
 
+.input-label-2 {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 560px;
+    line-height: 1;
+}
+
+.email {
+    position: absolute;
+    z-index: 2;
+    top: 61%;
+    left: 27%;
+    width: 400px;
+    height: 56px;
+    display: inline-block;
+}
+
+.email::placeholder {
+    font-size: 12px;
+}
+
+.try-for-free {
+    border: unset;
+    outline: unset;
+    background: unset;
+    position: absolute;
+    z-index: 2;
+    top: 61%;
+    left: 53%;
+    color: white;
+    background-color: #e30813;
+    padding: 3px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: inherit;
+    height: 56px;
+    width: 250px;
+    font-size: 26px;
+}
