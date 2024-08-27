@@ -1,0 +1,1104 @@
+@media (min-width: 850px) {
+    @import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
+
+    body {
+        font-family: sans-serif;
+        overflow: auto;
+        background-color: #4c4c4c;
+    }
+
+    main {
+        background-color: #4c4c4c;
+    }
+
+    /* Heading section */
+
+    .header-section {
+        background-image: url("./assets/bg.jpg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 95vh;
+        font-family: inherit;
+        margin-bottom: 10px;
+    }
+
+    .header-section::after {
+        content: "";
+        position: relative;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 2;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .sign {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 3%;
+        right: 3%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    .sign:hover {
+        background-color: #f9343e;
+    }
+
+    .main-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 54px;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .sub-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 24px;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .sub-heading-1 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .input-label-2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .email {
+        position: absolute;
+        z-index: 2;
+        top: 61%;
+        left: 27%;
+        width: 400px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 61%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 250px;
+        font-size: 26px;
+    }
+
+    .try-for-free:hover {
+        background-color: #f9343e;
+    }
+
+    /* Main Section */
+    /* Enjoy TV Section */
+    .enjoy {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .enjoy-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .enjoy img {
+        width: 550px;
+        height: 290px;
+    }
+
+    /* Download section */
+    .download {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .download-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .download img {
+        width: 450px;
+        height: 290px;
+    }
+
+    /* Watch evrywhere section */
+    .watch-everywhere {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .watch-everywhere-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .watch-everywhere img {
+        width: 450px;
+        height: 290px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        background-color: black;
+        padding-bottom: 250px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+
+    .faq-heading {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding: 50px;
+    }
+
+    .faq-list {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style-type: none;
+    }
+
+    .faq-list li {
+        background-color: #323131;
+        padding: 10px 20px 10px 40px;
+        width: 600px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .email-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-list li:hover {
+        background-color: #4c4c4c;
+        cursor: pointer;
+    }
+
+    .faq-item i {
+        float: right;
+        padding-top: 5px;
+    }
+
+    .sub-heading-faq {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 75%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .email-faq {
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 29%;
+        width: 400px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email-faq::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free-faq {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 245px;
+        font-size: 26px;
+    }
+
+    .try-for-free-faq:hover {
+        background-color: #f9343e;
+    }
+
+    /* Footer */
+    .page-footer {
+        background-color: black;
+        height: 50vh;
+    }
+
+    footer .heading {
+        color: #4c4c4c;
+        padding-top: 5%;
+        padding-left: 20.5%;
+    }
+
+    div.list-container {
+        display: flex;
+        color: #4c4c4c;
+        gap: 120px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer li {
+        list-style-type: none;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    footer li:hover {
+        cursor: pointer;
+        color: #817d7d;
+    }
+}
+
+@media (max-width: 1250px) {
+    @import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
+
+    body {
+        font-family: sans-serif;
+        overflow: auto;
+        background-color: #4c4c4c;
+
+    }
+
+    main {
+        background-color: #4c4c4c;
+    }
+
+    /* Heading section */
+
+    .header-section {
+        background-image: url("./assets/bg.jpg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 95vh;
+        font-family: inherit;
+        margin-bottom: 10px;
+    }
+
+    .header-section::after {
+        content: "";
+        position: relative;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 2;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .sign {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 3%;
+        right: 3%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    .sign:hover {
+        background-color: #f9343e;
+    }
+
+    .main-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 34px;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .sub-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 24px;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .sub-heading-1 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .input-label-2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .email {
+        position: absolute;
+        z-index: 2;
+        top: 61%;
+        left: 23%;
+        width: 400px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 61%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 250px;
+        font-size: 26px;
+    }
+
+    .try-for-free:hover {
+        background-color: #f9343e;
+    }
+
+    /* Main Section */
+    /* Enjoy TV Section */
+    .enjoy {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .enjoy-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .enjoy img {
+        width: 550px;
+        height: 290px;
+    }
+
+    /* Download section */
+    .download {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .download-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .download img {
+        width: 450px;
+        height: 290px;
+    }
+
+    /* Watch evrywhere section */
+    .watch-everywhere {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .watch-everywhere-tv {
+        color: white;
+        width: 410px;
+        font-size: 22px;
+    }
+
+    .watch-everywhere img {
+        width: 450px;
+        height: 290px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        background-color: black;
+        padding-bottom: 250px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+
+    .faq-heading {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding: 50px;
+    }
+
+    .faq-list {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style-type: none;
+    }
+
+    .faq-list li {
+        background-color: #323131;
+        padding: 10px 20px 10px 40px;
+        width: 600px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .email-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-list li:hover {
+        background-color: #4c4c4c;
+        cursor: pointer;
+    }
+
+    .faq-item i {
+        float: right;
+        padding-top: 5px;
+    }
+
+    .sub-heading-faq {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 75%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .email-faq {
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 29%;
+        width: 400px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email-faq::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free-faq {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 245px;
+        font-size: 26px;
+    }
+
+    .try-for-free-faq:hover {
+        background-color: #f9343e;
+    }
+
+    /* Footer */
+    .page-footer {
+        background-color: black;
+        height: 50vh;
+    }
+
+    footer .heading {
+        color: #4c4c4c;
+        padding-top: 5%;
+        padding-left: 20.5%;
+    }
+
+    div.list-container {
+        display: flex;
+        color: #4c4c4c;
+        gap: 120px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer li {
+        list-style-type: none;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    footer li:hover {
+        cursor: pointer;
+        color: #817d7d;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .enjoy-tv,
+    .download-tv,
+    .faq-tv {
+        font-size: 18px;
+    }
+
+    .enjoy img,
+    .download img,
+    .faq img {
+        width: 400px;
+        height: 200px;
+    }
+
+    div.list-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    @import url('https://use.fontawesome.com/releases/v5.10.2/css/all.css');
+
+    body {
+        font-family: sans-serif;
+        overflow: auto;
+        background-color: #4c4c4c;
+    }
+
+    main {
+        background-color: #4c4c4c;
+    }
+
+    /* Heading section */
+
+    .header-section {
+        background-image: url("./assets/bg.jpg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 95vh;
+        font-family: inherit;
+        margin-bottom: 10px;
+    }
+
+    .header-section::after {
+        content: "";
+        position: relative;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 2;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        height: 50px;
+    }
+
+    .sign {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 3%;
+        right: 3%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    .sign:hover {
+        background-color: #f9343e;
+    }
+
+    .main-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 54px;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 440px;
+        line-height: 1;
+    }
+
+    .sub-heading {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        font-size: 24px;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 300px;
+        line-height: 1;
+    }
+
+    .sub-heading-1 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 300px;
+        line-height: 1;
+    }
+
+    .input-label-2 {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 560px;
+        line-height: 1;
+    }
+
+    .email {
+        position: absolute;
+        z-index: 2;
+        top: 78%;
+        left: 5%;
+        width: 200px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 78%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .try-for-free:hover {
+        background-color: #f9343e;
+    }
+
+    /* Main Section */
+    /* Enjoy TV Section */
+    .enjoy {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .enjoy-tv {
+        color: white;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .enjoy img {
+        width: 550px;
+        height: 200px;
+    }
+
+    /* Download section */
+    .download {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .download-tv {
+        color: white;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .download img {
+        width: 450px;
+        height: 250px;
+    }
+
+    /* Watch evrywhere section */
+    .watch-everywhere {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 10px;
+    }
+
+    .watch-everywhere-tv {
+        color: white;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .watch-everywhere img {
+        width: 450px;
+        height: 290px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        background-color: black;
+        padding-bottom: 250px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+
+    .faq-heading {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    .faq-list {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-left: -36px;
+    }
+
+    .faq-list li {
+        background-color: #323131;
+        padding: 10px 20px 10px 20px;
+        width: 270px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .email-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-list li:hover {
+        background-color: #4c4c4c;
+        cursor: pointer;
+    }
+
+    .faq-item i {
+        float: right;
+        padding-top: 5px;
+    }
+
+    .sub-heading-faq {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 75%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 200px;
+        line-height: 1;
+    }
+
+    .email-faq {
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 5%;
+        width: 200px;
+        height: 56px;
+        display: inline-block;
+    }
+
+    .email-faq::placeholder {
+        font-size: 12px;
+    }
+
+    .try-for-free-faq {
+        border: unset;
+        outline: unset;
+        background: unset;
+        position: absolute;
+        z-index: 2;
+        top: 80%;
+        left: 53%;
+        color: white;
+        background-color: #e30813;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: inherit;
+        height: 56px;
+        width: 155px;
+        font-size: 18px;
+    }
+
+    .try-for-free-faq:hover {
+        background-color: #f9343e;
+    }
+
+    /* Footer */
+    .page-footer {
+        background-color: black;
+        height: 100%;
+    }
+
+    footer .heading {
+        color: #4c4c4c;
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    div.list-container {
+        display: flex;
+        flex-direction: column;
+        color: #4c4c4c;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: start;
+        justify-content: center;
+    }
+
+    footer li {
+        list-style-type: none;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .first-list,
+    .second-list,
+    .third-list,
+    .fourth-list {
+        padding-left: 0;
+        margin-left: 50%;
+        text-align: center;
+        transform: translate(-50%);
+    }
+
+    footer li:hover {
+        cursor: pointer;
+        color: #817d7d;
+    }
+}
