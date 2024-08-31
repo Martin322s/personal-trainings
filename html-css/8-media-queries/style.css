@@ -19,3 +19,9 @@ h1 {
         color: pink;
     }
 }
+
+@media (orientation: portrait) or (min-width: 300px) {
+    h1 {
+        color: orange;
+    }
+}
