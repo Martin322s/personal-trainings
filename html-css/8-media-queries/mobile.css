@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 300px) {
+    h1 {
+        color: pink;
+    }
+}
+
+@media (orientation: portrait) or (min-width: 300px) {
+    h1 {
+        color: orange;
+    }
+}
