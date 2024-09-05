@@ -8,3 +8,10 @@ let dobuleFloat: number = 1.10;
 let binaryNumber: number = 0x1;
 let hexaNumber: number = 0x255;
 let bigInteger: number = 0b001;
+
+// String types
+let singleQuotes: string = 'Pesho';
+let doubleQuotes: string = "Double";
+let templateLiteral: string = `Template`;
+let backQuotes: string = `Back`;
+let multiLine: string = `a`;
