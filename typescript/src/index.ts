@@ -20,3 +20,12 @@ let multiLine: string = `a`;
 let nullVariable: null = null;
 let undefinedVariable1: undefined;
 let undefinedVariable2: undefined = undefined;
+
+// Void
+function printStar(): void {
+    console.log('*');
+}
+
+function counter(): number {
+    return 1;
+}
