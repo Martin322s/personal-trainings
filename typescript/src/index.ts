@@ -62,7 +62,16 @@ console.log(person.login('admin', 'admin2'));
 // Enum
 enum DaysOfWeek {
     'Monday' = 1,
-    'Tuesday' 
+    'Tuesday' = 2
 }
 
 console.log(DaysOfWeek.Monday);
+
+// Arrays
+let arrayOfNumbers: number[] = [1, 2, 3, 4];
+let arrayOfBooleans: boolean[] = [true, false];
+let objectsArray: { name: string }[] = [{ name: 'Pesho' }, { name: 'Ivan' }];
+
+// Tuples
+let basicTuple: [1, 2] = [1, 2];
+let entriesTuple: [string, number] = ['Pesho', 1];
