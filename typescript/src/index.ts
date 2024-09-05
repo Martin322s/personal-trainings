@@ -15,3 +15,8 @@ let doubleQuotes: string = "Double";
 let templateLiteral: string = `Template`;
 let backQuotes: string = `Back`;
 let multiLine: string = `a`;
+
+// Null and Undefined
+let nullVariable: null = null;
+let undefinedVariable1: undefined;
+let undefinedVariable2: undefined = undefined;
