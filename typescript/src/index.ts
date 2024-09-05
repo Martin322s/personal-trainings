@@ -58,3 +58,11 @@ class Person implements User {
 let person: Person = new Person('admin', 'admin1');
 
 console.log(person.login('admin', 'admin2'));
+
+// Enum
+enum DaysOfWeek {
+    'Monday' = 1,
+    'Tuesday' 
+}
+
+console.log(DaysOfWeek.Monday);
