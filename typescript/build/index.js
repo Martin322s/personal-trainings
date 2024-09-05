@@ -21,4 +21,22 @@ let undefinedVariable2 = undefined;
 function printStar() {
     console.log('*');
 }
-printStar();
+function counter() {
+    return 1;
+}
+class Person {
+    username;
+    password;
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+    login(username, password) {
+        if (username === this.username && password == this.password) {
+            return true;
+        }
+        return false;
+    }
+}
+let person = new Person('admin', 'admin1');
+console.log(person.login('admin', 'admin1'));

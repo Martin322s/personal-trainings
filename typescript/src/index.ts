@@ -29,3 +29,32 @@ function printStar(): void {
 function counter(): number {
     return 1;
 }
+
+// Interface
+interface User {
+    username: string;
+    password: string;
+    login: (username: string, password: string) => boolean;
+}
+
+class Person implements User {
+    username: string;
+    password: string;
+
+    constructor(username: string, password: string) {
+        this.username = username;
+        this.password = password;
+    }
+
+    login(username: string, password: string): boolean {
+        if (username === this.username && password == this.password) {
+            return true;
+        }
+
+        return false;
+    }
+}
+
+let person: Person = new Person('admin', 'admin1');
+
+console.log(person.login('admin', 'admin2'));
