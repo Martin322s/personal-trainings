@@ -75,3 +75,7 @@ let objectsArray: { name: string }[] = [{ name: 'Pesho' }, { name: 'Ivan' }];
 // Tuples
 let basicTuple: [1, 2] = [1, 2];
 let entriesTuple: [string, number] = ['Pesho', 1];
+
+// as assertions
+let someValue: number = 'Example text!';
+console.log(someValue.length);
