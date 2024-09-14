@@ -87,3 +87,15 @@ let textVariable: string | null = null;
 textVariable = 'Some text';
 
 console.log(textVariable!.length);
+
+// Type intereference
+let string = 'String';
+
+// Type Compatibility
+interface User2 {
+    name: string;
+    age: number
+}
+
+let user: User2 = { name: 'Pesho', age: 20 };
+let person2: { username: string, password: string } = { username: 'Peter', password: 'asd' };
