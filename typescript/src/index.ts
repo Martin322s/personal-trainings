@@ -83,3 +83,7 @@ console.log((someValue as string).length);
 let number: number[] = [1] as const;
 // number becomes readonly variable
 
+let textVariable: string | null = null;
+textVariable = 'Some text';
+
+console.log(textVariable!.length);
