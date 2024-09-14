@@ -79,3 +79,7 @@ let entriesTuple: [string, number] = ['Pesho', 1];
 // as assertions
 let someValue: any = 'Example text!';
 console.log((someValue as string).length);
+
+let number: number[] = [1] as const;
+// number becomes readonly variable
+
