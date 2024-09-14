@@ -99,3 +99,12 @@ interface User2 {
 
 let user: User2 = { name: 'Pesho', age: 20 };
 let person2: { username: string, password: string } = { username: 'Peter', password: 'asd' };
+
+// Combining types
+type user2Keys = keyof User2; "name | age"
+let text: user2Keys = 'age';
+
+type Name = 'string';
+type Age = 'number';
+
+type NameAndAge = Name & Age;
