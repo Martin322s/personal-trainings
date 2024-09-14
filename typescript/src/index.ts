@@ -77,5 +77,5 @@ let basicTuple: [1, 2] = [1, 2];
 let entriesTuple: [string, number] = ['Pesho', 1];
 
 // as assertions
-let someValue: number = 'Example text!';
-console.log(someValue.length);
+let someValue: any = 'Example text!';
+console.log((someValue as string).length);
