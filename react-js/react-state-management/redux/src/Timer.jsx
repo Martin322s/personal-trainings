@@ -4,11 +4,12 @@ import { startTimer, stopTimer, tick } from './actions';
 
 const Timer = () => {
     const dispatch = useDispatch();
-    const time = useSelector((state) => state.time);
-    const isRunning = useSelector((state) => state.isRunning);
+    const time = useSelector((state) => state.timer.time);
+    const isRunning = useSelector((state) => state.timer.isRunning);
 
     useEffect(() => {
         let interval = null;
+
         if (isRunning) {
             interval = setInterval(() => {
                 dispatch(tick());
